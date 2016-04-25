@@ -11,6 +11,6 @@ function WriteViewer(url){
 
 // Write the help text.
 function WriteHelp(helpline, example){
-	$("#divHelpExplanation").text(helpline);
-	$("#divHelpExample").text(example);
+	$("#divHelpExplanation").html(helpline);
+	$("#divHelpExample").html(example);
 }

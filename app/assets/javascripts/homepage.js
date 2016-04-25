@@ -1,4 +1,12 @@
 $(function() {
+    $("#aLogo").click(function () {
+        SwitchView("home");
+    });
+
+    $("#aHome").click(function () {
+        SwitchView("home");
+    });
+
 	$("#aContactUs").click(function () {
 		OpenContactDialog();
 	});
