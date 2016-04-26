@@ -23,45 +23,54 @@
 /* Toggle Styles */
 
 #wrapper {
-    padding-left: 0;
+    padding-left: 100px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    font-family: 'Kanit', sans-serif;;
 }
 
 #wrapper.toggled {
-    padding-left: 250px;
+    padding-left: 350px;
 }
 
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
-    left: 250px;
-    width: 0;
+    left: 350px;
+    width: 0350px;
     height: 100%;
-    margin-left: -250px;
-    overflow-y: auto;
+    margin-left: -350px;
+    overflow-y: auto ;
     background: #000;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    font-family: 'Kanit', sans-serif;;
 }
 
 #wrapper.toggled #sidebar-wrapper {
-    width: 250px;
+    width: 300px;
 }
 
 #page-content-wrapper {
     width: 100%;
     position: absolute;
-    padding: 15px;
+    padding: 50px;
+    font-family: 'Kanit', sans-serif;;
 }
 ≠≠
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
-    margin-right: -250px;
+    margin-right: -300px;
+    font-family: 'Kanit', sans-serif;;
+}
+
+h2 {
+  font-family: 'Kanit', sans-serif   !important;
+  font-weight: bold;
 }
 
 /* Sidebar Styles */
@@ -69,14 +78,14 @@
 .sidebar-nav {
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 300px;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 .sidebar-nav li {
-    text-indent: 20px;
+    text-indent: 30px;
     line-height: 40px;
 }
 
@@ -104,7 +113,7 @@
 }
 
 .sidebar-nav > .sidebar-brand a {
-    color: #999999;
+    color: #5b94c5;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
@@ -114,29 +123,36 @@
 
 @media(min-width:768px) {
     #wrapper {
-        padding-left: 250px;
+        padding-left: 300px;
+        font-family: 'Kanit', sans-serif;;
     }
 
     #wrapper.toggled {
-        padding-left: 0;
+        padding-left: 75px;
+        font-family: 'Kanit', sans-serif;;
     }
 
     #sidebar-wrapper {
-        width: 250px;
+        font-family: 'Kanit', sans-serif;;
+        width: 300px;
     }
 
     #wrapper.toggled #sidebar-wrapper {
+        font-family: 'Kanit', sans-serif;;
         width: 0;
     }
 
     #page-content-wrapper {
-        padding: 20px;
+        padding: 0px;
         position: relative;
+        font-family: 'Kanit', sans-serif;
+        padding-left: 35px;
     }
 
     #wrapper.toggled #page-content-wrapper {
         position: relative;
         margin-right: 0;
+        font-family: 'Kanit', sans-serif;;
     }
 }
 
